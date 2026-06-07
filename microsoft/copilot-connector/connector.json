@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "v1.0.0",
+  "manifestVersion": "1.18",
+  "id": "9f43c1b6-meok-trade-compliance",
+  "name": {
+    "short": "MEOK Trade Compliance",
+    "full": "MEOK AI Labs — Trade Compliance + Attestation"
+  },
+  "description": {
+    "short": "Sign + verify HMAC compliance attestations.",
+    "full": "MEOK is the public attestation layer for 32 PyPI-published Model Context Protocol servers covering trade-compliance regulators across 9 jurisdictions and 4 modes (road, air, sea, rail). The verifier endpoint is public + rate-limited; sign requires an API key. Every signed attestation auto-bridges to EU AI Act + UK AI Bill + NIST AI RMF + ISO/IEC 42001 via a single governance MCP."
+  },
+  "developer": {
+    "name": "MEOK AI Labs / CSOAI LTD",
+    "websiteUrl": "https://meok.ai",
+    "privacyUrl": "https://meok.ai/privacy",
+    "termsOfUseUrl": "https://meok.ai/terms"
+  },
+  "icons": {
+    "color": "https://haulage.app/og-image.jpg",
+    "outline": "https://haulage.app/favicon.ico"
+  },
+  "accentColor": "#0EA5E9",
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": [
+    "meok-attestation-api.vercel.app",
+    "haulage.app",
+    "meok.ai"
+  ],
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "meok-trade-compliance-agent",
+        "file": "agent.json"
+      }
+    ]
+  }
+}

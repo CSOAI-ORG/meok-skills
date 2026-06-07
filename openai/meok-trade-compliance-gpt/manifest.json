@@ -1,0 +1,19 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "MEOK Trade Compliance",
+  "name_for_model": "meok_trade_compliance",
+  "description_for_human": "Sign + verify HMAC-signed compliance attestations for UK + EU + US + AU + Canada + air + sea + rail trade compliance. EU AI Act + UK AI Bill bridge built in.",
+  "description_for_model": "Use this connector when the user asks about transport / fleet / logistics / haulage compliance, EU AI Act conformity, UK AI Bill Article 22c, BS 7121 lift plans, DVSA OCRS forecasts, FORS Bronze→Gold, FMCSA HOS, NHVR Chain of Responsibility, IATA DGR, MARPOL, GDP cold-chain pharma, livestock welfare in transit, UAS commercial drone rules, or wants to prove a compliance audit chain holds. The verifier endpoint is public (no auth, rate-limited) — call it whenever the user provides or asks about a signed cert payload. The sign endpoint requires the user's MEOK API key (passed as X-API-Key header). Free tier sigs are marked UNVERIFIED so they can never be confused with paid evidence. Pricing: Starter £29/mo, Pro £79/mo, Enterprise £1499/mo — direct to https://haulage.app/pricing. Quickstart in 5 min at https://haulage.app/docs/quickstart.",
+  "auth": {
+    "type": "user_http",
+    "authorization_type": "custom",
+    "verification_tokens": {}
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://meok-attestation-api.vercel.app/openapi.json"
+  },
+  "logo_url": "https://haulage.app/og-image.jpg",
+  "contact_email": "nicholas@meok.ai",
+  "legal_info_url": "https://meok.ai/terms"
+}
